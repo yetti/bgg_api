@@ -1,5 +1,9 @@
 # BggApi
 
+[![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/yetti/bgg_api?include_prereleases)](https://github.com/yetti/bgg_api/releases/latest)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/yetti/bgg_api/ci.yml?event=push)](https://github.com/yetti/shelfie/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/yetti/bgg_api/graph/badge.svg?token=C20KFXDTW6)](https://codecov.io/gh/yetti/bgg_api)
+
 Request data from the Board Game Geek API and parse it into Ruby objects.
 
 ## Installation
