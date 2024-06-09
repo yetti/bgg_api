@@ -32,6 +32,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "faraday", ">= 1.10", "< 3.0"
+  spec.add_dependency "faraday-retry", "~> 2.2", ">= 2.2.1"
+  spec.add_dependency "faraday-decode_xml", "~> 0.2.1"
+  spec.add_dependency "faraday-http-cache", "~> 2.5", ">= 2.5.1"
+  spec.add_dependency "faraday-follow_redirects", "~> 0.3.0"
+  spec.add_dependency "httpx", "~> 1.2", ">= 1.2.5"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
