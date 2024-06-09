@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "bgg_api"
+require_relative "simplecov_helper"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
