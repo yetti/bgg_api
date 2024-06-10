@@ -13,8 +13,48 @@ module BggApi
       @cache = cache
     end
 
+    def thing(params)
+      request(method: :get, endpoint: "thing", body: params)
+    end
+
+    def family(params)
+      request(method: :get, endpoint: "family", body: params)
+    end
+
+    def forumlist(params)
+      request(method: :get, endpoint: "forumlist", body: params)
+    end
+
+    def forum(params)
+      request(method: :get, endpoint: "forum", body: params)
+    end
+
+    def thread(params)
+      request(method: :get, endpoint: "thread", body: params)
+    end
+
     def search(params)
       request(method: :get, endpoint: "search", body: params)
+    end
+
+    def user(params)
+      request(method: :get, endpoint: "user", body: params)
+    end
+
+    def guild(params)
+      request(method: :get, endpoint: "guild", body: params)
+    end
+
+    def plays(params)
+      request(method: :get, endpoint: "plays", body: params)
+    end
+
+    def collection(params)
+      request(method: :get, endpoint: "collection", body: params)
+    end
+
+    def hot(params)
+      request(method: :get, endpoint: "hot", body: params)
     end
 
     private
