@@ -1,0 +1,204 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.boardgamegeek.com/xmlapi2/thing?id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.1
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      date:
+      - Mon, 10 Jun 2024 07:35:10 GMT
+      server:
+      - Varnish
+      x-varnish:
+      - '8560322628'
+      access-control-allow-origin:
+      - ''
+      location:
+      - https://boardgamegeek.com/xmlapi2/thing?id=1
+      content-length:
+      - '0'
+      via:
+      - 1.1 google
+      strict-transport-security:
+      - max-age=31536000
+      alt-svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+  recorded_at: Mon, 10 Jun 2024 07:35:10 GMT
+- request:
+    method: get
+    uri: https://boardgamegeek.com/xmlapi2/thing?id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.14.1
+      date:
+      - Mon, 10 Jun 2024 07:10:17 GMT
+      content-type:
+      - text/xml; charset="UTF-8"
+      x-powered-by:
+      - PHP/8.0.30
+      etag:
+      - W/"4db9bbd7e0b90d96f7551f11c8c4cea9"
+      cache-control:
+      - max-age=3600
+      access-control-allow-origin:
+      - "*"
+      content-encoding:
+      - gzip
+      vary:
+      - Accept-Encoding
+      x-varnish:
+      - 8632043684 4259454273
+      age:
+      - '1493'
+      accept-ranges:
+      - bytes
+      content-length:
+      - '2162'
+      via:
+      - 1.1 geek-varnish7 (Varnish/7.3), 1.1 google
+      strict-transport-security:
+      - max-age=31536000
+      alt-svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?><items termsofuse=\"https://boardgamegeek.com/xmlapi/termsofuse\"><item
+        type=\"boardgame\" id=\"1\">\n         <thumbnail>https://cf.geekdo-images.com/rpwCZAjYLD940NWwP3SRoA__thumb/img/YT6svCVsWqLrDitcMEtyazVktbQ=/fit-in/200x150/filters:strip_icc()/pic4718279.jpg</thumbnail>\n
+        \     <image>https://cf.geekdo-images.com/rpwCZAjYLD940NWwP3SRoA__original/img/yR0aoBVKNrAmmCuBeSzQnMflLYg=/0x0/filters:format(jpeg)/pic4718279.jpg</image>\n
+        \                                    \t\t\t\t\n\t\t\t\t<name type=\"primary\"
+        sortindex=\"5\" value=\"Die Macher\" />\n\t\t\t\n\t\t\t\t\t\t                               \t\t\t\t\n\t\t\t\t<name
+        type=\"alternate\" sortindex=\"1\" value=\"德国大选\" />\n\t\t\t    \t\t\t\t\n\t\t\t\t<name
+        type=\"alternate\" sortindex=\"1\" value=\"디 마허\" />\n\t\t\t\n\t\t\t\t\t\t
+        \              \t\t\t\t\t\t\t\t\t\t\t\t\t<description>Die Macher is a game
+        about seven sequential political races in different regions of Germany. Players
+        are in charge of national political parties, and must manage limited resources
+        to help their party to victory. The winning party will have the most victory
+        points after all the regional elections. There are four different ways of
+        scoring victory points. First, each regional election can supply one to eighty
+        victory points, depending on the size of the region and how well your party
+        does in it. Second, if a party wins a regional election and has some media
+        influence in the region, then the party will receive some media-control victory
+        points. Third, each party has a national party membership which will grow
+        as the game progresses and this will supply a fair number of victory points.
+        Lastly, parties score some victory points if their party platform matches
+        the national opinions at the end of the game.&amp;#10;&amp;#10;The 1986 edition
+        featured four parties from the old West Germany and supported 3-4 players.
+        The 1997 edition supports up to five players in the re-united Germany and
+        updated several features of the rules as well.  The 2006 edition also supports
+        up to five players and adds a shorter five-round variant and additional rules
+        updates by the original designer.&amp;#10;&amp;#10;</description>\n\t\t\t\t\t\t\t\t\t\t
+        \     \t               \t\t\t\t<yearpublished value=\"1986\" />\n\t\t\t\t\t\t
+        \              \t\t\t\t<minplayers value=\"3\" />\n\t\t\t\t\t\t               \t\t\t\t<maxplayers
+        value=\"5\" />\n\t\t\t\t\t\t      \t\t\t<poll name=\"suggested_numplayers\"
+        title=\"User Suggested Number of Players\" totalvotes=\"140\">\n\t\t\t\n\t\t<results
+        numplayers=\"1\">\t\t\n\t\t\t\t\t<result value=\"Best\" numvotes=\"0\" />\n\t\t\t\t\t<result
+        value=\"Recommended\" numvotes=\"1\" />\n\t\t\t\t\t<result value=\"Not Recommended\"
+        numvotes=\"88\" />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"2\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"1\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"92\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"3\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"2\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"27\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"78\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"4\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"26\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"89\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"9\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"5\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"119\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"12\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"2\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"5+\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"1\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"0\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"63\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll> \t\t\t               \t\t\t\t<playingtime
+        value=\"240\" />\n\t\t\t\t\t\t               \t\t\t\t<minplaytime value=\"240\"
+        />\n\t\t\t\t\t\t               \t\t\t\t<maxplaytime value=\"240\" />\n\t\t\t\t\t\t
+        \              \t\t\t\t<minage value=\"14\" />\n\t\t\t\t\t\t      \t\t\t<poll
+        name=\"suggested_playerage\" title=\"User Suggested Player Age\" totalvotes=\"31\">\n\t\t\t<results>\t\t\n\t\t\t\t\t<result
+        value=\"2\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"3\" numvotes=\"0\"
+        />\n\t\t\t\t\t<result value=\"4\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"5\"
+        numvotes=\"0\" />\n\t\t\t\t\t<result value=\"6\" numvotes=\"0\" />\n\t\t\t\t\t<result
+        value=\"8\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"10\" numvotes=\"0\"
+        />\n\t\t\t\t\t<result value=\"12\" numvotes=\"6\" />\n\t\t\t\t\t<result value=\"14\"
+        numvotes=\"18\" />\n\t\t\t\t\t<result value=\"16\" numvotes=\"4\" />\n\t\t\t\t\t<result
+        value=\"18\" numvotes=\"2\" />\n\t\t\t\t\t<result value=\"21 and up\" numvotes=\"1\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll> \t\t\t      \t\t\t<poll name=\"language_dependence\"
+        title=\"Language Dependence\" totalvotes=\"49\">\n\t\t\t\n\t\t<results>\t\t\n\t\t\t\t\t<result
+        level=\"1\" value=\"No necessary in-game text\" numvotes=\"37\" />\n\t\t\t\t\t<result
+        level=\"2\" value=\"Some necessary text - easily memorized or small crib sheet\"
+        numvotes=\"5\" />\n\t\t\t\t\t<result level=\"3\" value=\"Moderate in-game
+        text - needs crib sheet or paste ups\" numvotes=\"7\" />\n\t\t\t\t\t<result
+        level=\"4\" value=\"Extensive use of text - massive conversion needed to be
+        playable\" numvotes=\"0\" />\n\t\t\t\t\t<result level=\"5\" value=\"Unplayable
+        in another language\" numvotes=\"0\" />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll>
+        \t\t\t      \t\t\t \t\t\t      \t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamecategory\" id=\"1021\" value=\"Economic\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1026\"
+        value=\"Negotiation\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamecategory\" id=\"1001\" value=\"Political\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\n\n\t\t\t
+        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\"
+        id=\"2916\" value=\"Alliances\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2080\"
+        value=\"Area Majority / Influence\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2012\"
+        value=\"Auction/Bidding\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamemechanic\" id=\"2072\" value=\"Dice Rolling\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2040\"
+        value=\"Hand Management\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamemechanic\" id=\"2020\" value=\"Simultaneous Action Selection\"
+        />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\n\n\t\t\t      \t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamefamily\" id=\"10643\" value=\"Country: Germany\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamefamily\" id=\"81575\"
+        value=\"Digital Implementations: VASSAL\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamefamily\" id=\"34116\"
+        value=\"Political: Elections\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamefamily\" id=\"91\"
+        value=\"Series: Classic Line (Valley Games)\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\n\n\t\t\t
+        \     \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t
+        \     \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t
+        \     \t      \t      \t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamedesigner\" id=\"1\" value=\"Karl-Heinz Schmiel\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\n\n\t\t\t
+        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\"
+        id=\"928\" value=\"Bernd Brunnhofer\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\" id=\"12517\"
+        value=\"Marcus Gschwendtner\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\" id=\"4959\"
+        value=\"Harald Lieske\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\n\n\t\t\t      \t
+        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\"
+        id=\"133\" value=\"Hans im Glück\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\" id=\"2\"
+        value=\"Moskito Spiele\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamepublisher\" id=\"24883\" value=\"Ediciones MasQueOca\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\" id=\"2726\"
+        value=\"Portal Games\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamepublisher\" id=\"15108\" value=\"Spielworxx\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\" id=\"39249\"
+        value=\"sternenschimmermeer\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\" id=\"11652\"
+        value=\"Stronghold Games\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamepublisher\" id=\"5382\" value=\"Valley Games, Inc.\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t
+        \t\t\t\n\n\t\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\" id=\"8147\"
+        value=\"YOKA Games\" />\n\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\n\n\t\t\t\n\t\n\n\t\n\n\t\n\t\n\t\n
+        \  \n\t\n          \n</item>\n</items>"
+  recorded_at: Mon, 10 Jun 2024 07:35:10 GMT
+recorded_with: VCR 6.2.0

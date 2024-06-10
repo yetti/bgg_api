@@ -17,47 +17,69 @@ module BggApi
       end
 
       def thing(params)
+        raise ArgumentError, "id is required" if params[:id].nil?
+
         request(method: :get, endpoint: "thing", body: params)
       end
 
       def family(params)
+        raise ArgumentError, "id is required" if params[:id].nil?
+
         request(method: :get, endpoint: "family", body: params)
       end
 
       def forumlist(params)
+        raise ArgumentError, "id is required" if params[:id].nil?
+
         request(method: :get, endpoint: "forumlist", body: params)
       end
 
       def forum(params)
+        raise ArgumentError, "id is required" if params[:id].nil?
+
         request(method: :get, endpoint: "forum", body: params)
       end
 
       def thread(params)
+        raise ArgumentError, "id is required" if params[:id].nil?
+
         request(method: :get, endpoint: "thread", body: params)
       end
 
-      def search(params)
-        request(method: :get, endpoint: "search", body: params)
-      end
-
       def user(params)
+        raise ArgumentError, "name is required" if params[:name].nil?
+
         request(method: :get, endpoint: "user", body: params)
       end
 
       def guild(params)
+        raise ArgumentError, "id is required" if params[:id].nil?
+
         request(method: :get, endpoint: "guild", body: params)
       end
 
       def plays(params)
+        raise ArgumentError, "username is required" if params[:id].nil?
+
         request(method: :get, endpoint: "plays", body: params)
       end
 
       def collection(params)
+        raise ArgumentError, "username is required" if params[:id].nil?
+
         request(method: :get, endpoint: "collection", body: params)
       end
 
       def hot(params)
+        raise ArgumentError, "type is required" if params[:type].nil?
+
         request(method: :get, endpoint: "hot", body: params)
+      end
+
+      def search(params)
+        raise ArgumentError, "query is required" if params[:query].nil?
+
+        request(method: :get, endpoint: "search", body: params)
       end
 
       private
@@ -86,11 +108,9 @@ module BggApi
             f.response :xml
             f.response :follow_redirects
             f.response :raise_error
-            f.response :logger, @logger, headers: true, bodies: true, log_level: :debug
+            f.response :logger, @logger, headers: true, bodies: true, log_level: :debug unless @logger.nil?
 
-            unless @cache.nil?
-              f.use :http_cache, store: @cache, logger: @logger
-            end
+            f.use :http_cache, store: @cache, logger: @logger unless @cache.nil?
 
             f.adapter :httpx
           end
