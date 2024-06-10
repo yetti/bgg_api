@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "faraday", ">= 1.10", "< 3.0"
+  spec.add_dependency "faraday", "~> 2.9", ">= 2.9.1"
   spec.add_dependency "faraday-retry", "~> 2.2", ">= 2.2.1"
   spec.add_dependency "faraday-decode_xml", "~> 0.2.1"
   spec.add_dependency "faraday-http-cache", "~> 2.5", ">= 2.5.1"
@@ -40,11 +40,11 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "rake", "~> 13.2", ">= 13.2.1"
   spec.add_development_dependency "rspec", "~> 3.13"
+  spec.add_development_dependency "vcr", "~> 6.2"
   spec.add_development_dependency "simplecov", "~> 0.22.0"
   spec.add_development_dependency "simplecov-cobertura", "~> 2.1"
 
   spec.add_development_dependency "standard", ">= 1.36.0"
-
   spec.add_development_dependency "rubocop", "~> 1.63.0"
   spec.add_development_dependency "rubocop-rake", "~> 0.6.0"
   spec.add_development_dependency "rubocop-rspec", "~> 2.31"
